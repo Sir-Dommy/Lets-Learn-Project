@@ -1,0 +1,109 @@
+.study{
+    display: flex;
+    height: 100%;
+}
+.topics{
+    background-color: black;
+    color: white;
+    width: 20rem;
+    /* height: 100%; */
+    position: fixed;
+    top: 0; left: -20rem;
+}
+.topics.active{
+    margin-left: 20rem;
+}
+.content{
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    text-align: center;
+}
+.Topic{
+    text-align: center;
+}
+.subtopics{
+    display: none;
+}
+.subtopics a:hover{
+    background-color: green;
+}
+.Topic1 a:hover{
+    background-color: green;
+}
+.Topic1:hover .subtopics{
+    display: block;
+}
+.topics p{
+    margin-left: 5%;
+}
+.topics a{
+    color: white;
+    text-decoration: none;
+}
+#studyProgress{
+    background-color: green;
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: green;
+    height: 1rem;
+    width: 25%;
+}
+.remove{
+    background-color: green;
+    /* position: absolute; */
+    margin-left: 35%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-style: solid;
+    border-radius: 1rem;
+    height: 1.7rem;
+    cursor: pointer;
+}
+#menu-btn{
+    height: 2rem;
+    line-height: 2rem;
+    padding-left: 0.5rem;
+    width: 2rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    position: absolute;
+    margin-left: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* media quesries for study page */
+@media only screen and (max-width: 1000px) {
+    .topics{
+        font-size: 40px;
+    }
+    .content{
+        font-size: 40px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #studyProgress{
+        height: 40px;
+        width: 40%;
+    }
+    #menu-btn{
+        height: 3rem;
+        line-height: 3rem;
+        padding-left: 0.5rem;
+        width: 3rem;
+        font-size: 2.7rem;
+    }
+  }
